@@ -21,7 +21,7 @@ for w in words:
     if match:
         words_with_doubles.append(w)
         matchvow = re.search(regexvowel, sorted_w)
-        if match:
+        if matchvow:
             match = re.search(regexp, w)
             if not match:
                 words_with_double_vowels.append(w)
@@ -29,3 +29,4 @@ for w in words:
 print ("Words with double letters in sequence: ", len(words_with_double_sequence), " out of ", len(words))
 print ("Words with double letters anywhere: ", len(words_with_doubles), " out of ", len(words))
 print ("Words with double vowels: ", len(words_with_double_vowels), " out of ", len(words))
+print (words_with_double_vowels)
