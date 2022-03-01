@@ -29,4 +29,3 @@ for w in words:
 print ("Words with double letters in sequence: ", len(words_with_double_sequence), " out of ", len(words))
 print ("Words with double letters anywhere: ", len(words_with_doubles), " out of ", len(words))
 print ("Words with double vowels: ", len(words_with_double_vowels), " out of ", len(words))
-print (words_with_double_vowels)
